@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TestCApp</title>
+</head>
+<body>
+    <div class="container" id="DotsContainer"
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+	<script src="https://unpkg.com/konva@8/konva.min.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
